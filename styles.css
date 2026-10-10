@@ -6,10 +6,22 @@
 
 
 
-/* Uniform photographic catalog */
-.photo-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
-.little-island-card{display:block;background-image:url('little-island-preview.jpg.jpg');color:#fff;text-decoration:none}
-.archive-note a{color:inherit;text-underline-offset:3px}
-@media(max-width:1100px){.photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:800px){.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:520px){.photo-grid{grid-template-columns:1fr}}
+
+/* VEDELORA editorial refinement — unified cards and calmer visual rhythm */
+body{background:#f5f3ee}
+.nav{height:78px}.nav nav a{padding:27px 0 8px}
+.hero{min-height:min(76vh,720px);padding-top:110px;padding-bottom:45px;background-image:linear-gradient(90deg,rgba(6,13,17,.68) 0%,rgba(6,13,17,.32) 60%,rgba(6,13,17,.12) 100%),url('photo-5.jpg')}
+.hero h1{font-family:Georgia,serif;font-size:clamp(64px,7.2vw,112px);font-weight:400;line-height:.99;letter-spacing:-.045em;max-width:850px}
+.hero p{font-size:16px;max-width:520px;line-height:1.8}
+.categories{gap:1px;padding:1px;background:#202b30}.categories article{border-radius:0;height:150px}
+.section{padding-top:100px;padding-bottom:100px}
+.section-title{margin-bottom:40px}.section-title h2{font-family:Georgia,serif;font-size:clamp(36px,4vw,58px);font-weight:400;letter-spacing:-.025em;margin-top:16px}
+.photo-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.photo{height:auto;aspect-ratio:4/3;border-radius:2px;display:block}
+.photo:after{background:linear-gradient(0deg,rgba(7,11,13,.66),transparent 52%)}
+.photo div{left:22px;bottom:22px}.photo b{font-family:Georgia,serif;font-size:21px;margin-top:8px}.photo small{font-size:9px}
+.little-island-card{background-image:url('little-island-preview.jpg.jpg');color:#fff;text-decoration:none}
+.archive-note{margin-top:38px;font-size:12px;letter-spacing:0}.archive-note a{color:#252e32;text-underline-offset:4px}
+.resource-section{background:#ebe8e2}.resource-grid article{min-height:230px}
+@media(max-width:900px){.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{min-height:590px}.section{padding-top:75px;padding-bottom:75px}}
+@media(max-width:580px){.photo-grid{grid-template-columns:1fr;gap:20px}.photo{aspect-ratio:4/3}.hero h1{font-size:56px}.categories{grid-template-columns:repeat(2,1fr)}.categories article{height:130px}.section-title h2{font-size:40px}}
