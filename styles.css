@@ -25,3 +25,22 @@ body{background:#f5f3ee}
 .resource-section{background:#ebe8e2}.resource-grid article{min-height:230px}
 @media(max-width:900px){.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{min-height:590px}.section{padding-top:75px;padding-bottom:75px}}
 @media(max-width:580px){.photo-grid{grid-template-columns:1fr;gap:20px}.photo{aspect-ratio:4/3}.hero h1{font-size:56px}.categories{grid-template-columns:repeat(2,1fr)}.categories article{height:130px}.section-title h2{font-size:40px}}
+
+/* VEDELORA photography product editorial layout */
+.product-page{max-width:1500px;margin:auto;padding:0 6vw 100px}
+.product-breadcrumb{display:flex;align-items:center;gap:12px;padding:35px 0 60px;font-size:11px;color:#899094}.product-breadcrumb a{color:#667076;text-decoration:none}.product-breadcrumb a:hover{color:#141d21}
+.product-intro{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:38px}
+.product-eyebrow,.product-intro-aside>span{font-size:10px;letter-spacing:.23em;color:#7a8386}
+.product-intro h1{font-family:Georgia,serif;font-size:clamp(60px,7vw,106px);font-weight:400;letter-spacing:-.05em;line-height:1.04;margin:19px 0 0}
+.product-intro h1 span{display:block;font-family:Arial,Helvetica,sans-serif;font-size:clamp(17px,2vw,25px);font-weight:400;letter-spacing:0;color:#7b8588;margin-top:18px}
+.product-intro-aside{min-width:205px}.product-intro-aside p{font-size:12px;line-height:1.8;color:#6c7579}
+.product-photo{margin:0}.product-photo img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#e8e6e0}.product-photo figcaption{display:flex;justify-content:space-between;gap:15px;padding:16px 0;font-size:9px;letter-spacing:.14em;color:#858c8e;border-bottom:1px solid #d7d5ce}
+.product-info{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(290px,.75fr);gap:clamp(45px,8vw,150px);padding:80px 0 70px}
+.product-story h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(34px,4vw,54px);line-height:1.15;letter-spacing:-.025em;max-width:670px;margin:23px 0 28px}
+.product-story>p{font-size:15px;line-height:1.85;color:#626a6e;max-width:660px}
+.product-specs{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:50px;padding-top:28px;border-top:1px solid #d7d5ce}
+.product-specs div{display:flex;flex-direction:column;gap:10px}.product-specs span{font-size:9px;letter-spacing:.16em;color:#8c9295}.product-specs strong{font-size:12px;font-weight:400;color:#333d41}
+.product-purchase{align-self:start;background:#eae7e0;padding:36px}.product-price{font-family:Georgia,serif;font-size:62px;line-height:1.2;margin:22px 0}.product-purchase>p{font-size:13px;line-height:1.75;color:#687074}.product-disabled{background:#b7bab8;color:#f7f7f4;padding:18px;text-align:center;font-size:12px;letter-spacing:.06em;cursor:not-allowed;margin-top:26px}.product-purchase .product-purchase-note{font-size:11px;margin:15px 0 26px}.product-purchase a,.product-return a{color:#28353b;font-size:12px;text-underline-offset:4px}
+.product-return{border-top:1px solid #d7d5ce;padding-top:30px}
+@media(max-width:850px){.product-intro-aside{display:none}.product-info{grid-template-columns:1fr;gap:35px;padding-top:55px}.product-purchase{max-width:500px}.product-breadcrumb{padding-bottom:40px}}
+@media(max-width:560px){.product-page{padding:0 6vw 65px}.product-intro h1{font-size:58px}.product-photo figcaption{flex-direction:column;gap:6px}.product-info{padding-top:45px}.product-specs{gap:22px}.product-purchase{padding:26px}}
